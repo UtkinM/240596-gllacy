@@ -7,7 +7,87 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <p>qwer</p>
-
+  <div class="page">
+    <div class="page__wrapper">
+      <div class="page__site">
+        <header class="header">
+          <nav class="nav">
+            <div class="nav-logo">
+              <a href="" class="nav-logo__a">
+                <img src="#" alt="Gllacy Shoop" class="nav-logo__img" width="154px" height="64px">
+              </a>
+            </div>
+            <ul class="nav__menu">
+              <li class="menu_item">
+                <a class="menu__a" href="#">Каталог</a>
+                <ul>
+                  <li class="sub-menu">
+                    <a class="menu__a" href="#">Новинки</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a class="menu__a" href="#">Сливочное</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a class="menu__a" href="#">Щербеты</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a class="menu__a" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="sub-menu">
+                    <a class="menu__a" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu_item">
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li class="menu_item">
+                <a href="#">О Компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <div class="search">
+              <a class="search_btn  user-block__icon" href="#"></a>
+              <form class="form__input" id="search-form" action="#" method="post" >
+                <div class="form__input-holder">
+                  <input class="form search__form" id="search__input" type="text" name="search-query" placeholder="Что ищем?">
+                  <label for="search__input" class="form__input-label">Что ищем?</label>
+                </div>
+                <button class="hidden" type="submit" form="search-form">Найти</button>
+              </form>
+            </div>
+            <div class="login">
+              <a href="#" class="login__btn  user-block__icon">Вход</a>
+              <form class="form  login__form" id="login-form" method="post" action="#">
+                <div class="form__input-holder">
+                  <input class="form__input" id="email-input" type="email" placeholder="Электронная почта" >
+                  <label class="form__input-label" for="email-input">Электронная почта</label>
+                  <input class="form__input" id="password-input" type="password" name="password" placeholder="Пароль">
+                  <label class="form__input-label" for="password-input">Пароль</label>
+                </div>
+                <button class="btn  login__submit" type="submit" form="login-form"></button>
+                <div class="">
+                  <a class="" href="#">Забыли пароль?</a>
+                  <a class="" href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
+            <div class="basket">
+              <a class="basket__btn  user-block__icon" href="#">Пусто</a>
+            </div>
+          </div>
+          <div class="page-header__contacts">
+            <p>
+              С 10 до 20, ежедневно
+            </p>
+            <p class="phone">
+              8 812 450-25-25
+            </p>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
