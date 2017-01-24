@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Gllacy Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,7 +11,7 @@
   <input type="radio" id="slider__btn-1" name="toggle" checked>
   <input type="radio" id="slider__btn-2" name="toggle">
   <input type="radio" id="slider__btn-3" name="toggle">
-  <div class="page-slider">
+  <div class="page">
     <div class="page-wrapper">
       <div class="page__site">
 <!-- **************** Header **************** -->
@@ -18,7 +19,7 @@
           <nav class="nav-menu">
             <div class="nav-logo">
               <a href="" class="nav-logo__link">
-                <img src="#" alt="Gllacy Shoop" class="nav-logo__img" width="154" height="64">
+                <img src="img/logo.png" alt="Gllacy Shoop" class="nav-logo__img" width="154" height="64">
               </a>
             </div>
             <ul class="nav-menu__list">
@@ -28,27 +29,27 @@
                 </a>
                 <ul class="sub-menu">
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#">
+                    <a href="#" class="sub-menu__link  sub-menu__link_bold" >
                       Новинки
                     </a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#">
+                    <a href="#" class="sub-menu__link">
                       Сливочное
                     </a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#">
+                    <a href="#" class="sub-menu__link">
                       Щербеты
                     </a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#">
+                    <a href="#" class="sub-menu__link">
                       Фруктовый лед
                     </a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="#">
+                    <a href="#" class="sub-menu__link">
                       Мелорин
                     </a>
                   </li>
@@ -69,9 +70,9 @@
           <div class="user-block">
             <div class="search">
               <a href="#" class="search_btn  user-block__icon" >Поиск</a>
-              <form action="#" class="form  form__input" id="search-form" method="post" >
+              <form action="#" class="form  search__form" id="search-form" method="post" >
                 <div class="form__input-holder">
-                  <input type="text" class="form search__form" id="search__input" name="search-query" placeholder="Что ищем?">
+                  <input type="text" class="form__input  form__input_search" id="search__input" name="search-query" placeholder="Что ищем?">
                   <label for="search__input" class="form__input-label">
                     Что ищем?
                   </label>
@@ -267,16 +268,15 @@
                 Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
               </p>
             </div>
-            <div class="news__blog  news__blog_content">
+            <div class="news">
+              <div class="news__blog  news__blog_content"></div>
               <div class="news__title">
                 Новое в нашем блоге
               </div>
-              <div class="news">
-                <div class="news__blog-link">
-                  <a href="#" class="news__link">
-                    10 способов сервировки фруктовых щербетов к столу
-                  </a>
-                </div>
+              <div class="news__blog-link">
+                <a href="#" class="news__link">
+                  10 способов сервировки фруктовых щербетов к столу
+                </a>
               </div>
             </div>
             <div class="news__blog  news__blog_letter">
