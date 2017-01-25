@@ -71,6 +71,12 @@ img {
   color: #333333;
   background-color: #ffffff;
 }
+
+.nav-menu__item:hover .nav-menu__link_active {
+  color: #ffffff;
+  background: #d07058;
+}
+
 /*---------------- sub-menu ----------------*/
 .sub-menu {
   position: absolute;
