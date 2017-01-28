@@ -9,17 +9,26 @@ html {
   margin: 0 auto;
 }
 
+.page-site {
+  padding: 0 2.25%;
+}
+
 
 body  {
   font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
 }
 
 .header,
 .nav-menu,
-.nav-menu__list {
+.nav-menu__list,
+.action,
+.products {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
 }
 
 body > input[type="radio"] {
@@ -37,7 +46,7 @@ img {
 
 /*---------------- nav-menu ----------------*/
 .nav-menu {
-  min-width: 529px;
+  min-width: 560px;
 }
 
 .nav-menu__list {
@@ -48,6 +57,7 @@ img {
 }
 .nav-menu__item {
   position: relative;
+  vertical-align: top;
 }
 
 .nav-menu__item:hover > .sub-menu {
@@ -165,22 +175,21 @@ img {
 /*---------------- login ----------------*/
 .login {
   position: relative;
-
   display: inline-block;
   margin-right: 9px;
-
   font-size: 16px;
   vertical-align: top;
 }
 
 .login:hover .login__btn {
   color: #323232;
-
   background-color: #ffffff;
 }
 
 .login:hover .login__btn::before {
-  background-position: -5px -598px;
+  background-position: -288px 0;
+  width: 21px;
+  height: 19px;
 }
 
 .login__btn {
@@ -200,7 +209,13 @@ img {
   border-radius: 16px;
 }
 
-
+.login__btn::before {
+  top: 6px;
+  left: 16px;
+  width: 21px;
+  height: 19px;
+  background-position: -257px 0;;
+}
 
 .login__form {
   position: absolute;
@@ -220,6 +235,13 @@ img {
   display: block;
 }
 
+.user-block__icon::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
 /*---------------- header__index-content ---------------*/
 .header__index-content {
   font-weight: 500;
@@ -232,6 +254,29 @@ img {
   font-weight: 700;
   font-size: 22px;
   line-height: 32px;
+}
+
+.action {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.action__item {
+  width: 44%;
+  margin-right: 2%;
+  padding: 17px 19px;
+  padding-bottom: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.action__item_left {
+  background-image: url("../img/big-raspberry-backround.jpg");
+}
+
+.action__item_right {
+  background-image: url("../img/big-chocolate-background.jpg");
 }
 
 /*---------------- btn ----------------*/
@@ -261,7 +306,7 @@ img {
   box-shadow: inset 0 2px 2px rgba(148, 39, 24, 1);
 }
 
-/*------ form ------*/
+/*---------------- form ----------------*/
 .form {
   padding: 20px 15px;
   background: #f8f7f4;
@@ -269,3 +314,207 @@ img {
 }
 
 
+/*---------------- slider ----------------*/
+.page-slider {
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image .2s, background-color .2s;
+}
+
+.page-slider::before,
+.page-slider::after {
+  content: "";
+  visibility: hidden;
+}
+
+.page-slider::before {
+  background-image: url("../img/slider-2.png");
+}
+
+.page-slider::after {
+  background-image: url("../img/slider-3.png");
+}
+
+.slider {
+  position: relative;
+  margin-bottom: 40px;
+  padding-top: 319px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__title {
+  width: 680px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.slider__nav {
+  position: absolute;
+  bottom: 21px;
+  left: 0;
+  z-index: 5;
+}
+
+.slider__nav-item {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 4px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__nav-item:hover {
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.slider__nav-item:active {
+  background-color: #ffffff;
+}
+
+#slider__btn-1:checked ~ .page-slider #slide-1,
+#slider__btn-2:checked ~ .page-slider #slide-2,
+#slider__btn-3:checked ~ .page-slider #slide-3 {
+  display: block;
+}
+
+#slider__btn-1:checked ~ .page-slider .slider__nav-item[for="slider__btn-1"],
+#slider__btn-2:checked ~ .page-slider .slider__nav-item[for="slider__btn-2"],
+#slider__btn-3:checked ~ .page-slider .slider__nav-item[for="slider__btn-3"] {
+  background-color: #ffffff;
+}
+
+#slider__btn-1:checked ~ .page-slider {
+  background-color: #849d8f;
+  background-image: url("../img/slider-1.png");
+}
+
+#slider__btn-2:checked ~ .page-slider {
+  background-color: #8996a6;
+  background-image: url("../img/slider-2.png");
+}
+
+#slider__btn-3:checked ~ .page-slider {
+  background-color: #9d8b84;
+  background-image: url("../img/slider-3.png");
+}
+
+.btn__slide {
+  padding: 12px 41px;
+  font-size: 32px;
+  line-height: 40px;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
+  border-radius: 32px;
+}
+
+/*---------------- products ----------------*/
+.products {
+  margin-top: 40px;
+  font-size: 0;
+}
+
+.products_catalog {
+  margin-bottom: 45px;
+}
+
+.product {
+  position: relative;
+  width: 23.298429%;
+  margin-right: 2.268760%;
+  margin-bottom: 38px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.product:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: -4.868913%;
+  bottom: -75px;
+  left: -4.868913%;
+  z-index: -5;
+  display: none;
+  background: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
+  opacity: .3;
+}
+
+.product:hover {
+  z-index: 5;
+}
+
+.product:hover::before {
+  display: block;
+}
+
+.product:hover .product__btn {
+  display: block;
+}
+
+.product__img {
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.product_bestseller .product__img::before {
+  content: "";
+  position: absolute;
+  background: #ffffff url("../img/sprite.png") no-repeat;
+  background-position: -721px 0;
+  border-radius: 50%;
+}
+
+.product__price {
+  position: absolute;
+  bottom: 13px;
+  left: 1px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+}
+
+.product__weight {
+  font-size: 30px;
+}
+
+.product__link {
+  color: #ffffff;
+  text-decoration: none;
+
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.product:hover .product__link {
+  border-color: transparent;
+}
+
+.product__btn {
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  display: none;
+  min-width: 193px;
+  padding: 11px 0;
+  transform: translateX(-50%);
+}
