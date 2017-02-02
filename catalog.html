@@ -19,7 +19,7 @@
             </a>
           </div>
           <ul class="nav-menu__list">
-            <li class="nav__menu__item">
+            <li class="nav-menu__item">
               <a class="nav-menu__link  nav-menu__link_active" href="catalog.html">
                 Каталог
               </a>
@@ -30,34 +30,34 @@
                   </a>
                 </li>
                 <li class="sub-menu__item">
-                  <a class="sub-menu__link" href="#">
+                  <a href="#" class="sub-menu__link">
                     Сливочное
                   </a>
                 </li>
                 <li class="sub-menu__item">
-                  <a class="sub-menu__link" href="#">
+                  <a href="#" class="sub-menu__link">
                     Щербеты
                   </a>
                 </li>
                 <li class="sub-menu__item">
-                  <a class="sub-menu__link" href="#">
+                  <a href="#" class="sub-menu__link">
                     Фруктовый лед
                   </a>
                 </li>
                 <li class="sub-menu__item">
-                  <a class="sub-menu__link" href="#">
+                  <a href="#" class="sub-menu__link">
                     Мелорин
                   </a>
                 </li>
               </ul>
             </li>
             <li class="nav-menu__item">
-              <a href="#">
+              <a href="#" class="nav-menu__link">
                 Доставка и оплата
               </a>
             </li>
             <li class="nav-menu__item">
-              <a href="#">
+              <a href="#" class="nav-menu__link">
                 О Компании
               </a>
             </li>
@@ -65,10 +65,11 @@
         </nav>
         <div class="user-block">
           <div class="search">
-            <a href="#" class="search__btn  user-block__icon" >Поиск</a>
-            <form action="#" class="form  form__input" id="search-form" method="post" >
+            <a href="#" class="search__btn  user-block__icon">Поиск</a>
+            <form action="#" class="form  search__form" id="search-form" method="post">
               <div class="form__input-holder">
-                <input type="text" class="form__input  search__form" id="search__input" name="search-query" placeholder="Что ищем?">
+                <input type="text" class="form__input  form__input_search" id="search__input" name="search-query"
+                       placeholder="Что ищем?">
                 <label for="search__input" class="form__input-label">
                   Что ищем?
                 </label>
@@ -84,7 +85,7 @@
             </a>
             <form action="#" class="form  login__form" id="login-form" method="post">
               <div class="form__input-holder">
-                <input type="email" class="form__input" id="email-input" placeholder="Электронная почта" >
+                <input type="email" class="form__input" id="email-input" placeholder="Электронная почта">
                 <label for="email-input" class="form__input-label">
                   Электронная почта
                 </label>
@@ -93,9 +94,11 @@
                   Пароль
                 </label>
               </div>
-              <button type="submit" class="btn  login__submit" form="login-form"></button>
+              <button type="submit" class="btn  login__submit" form="login-form">
+                Войти
+              </button>
               <div class="helper">
-                <a  href="#" class="helper-link">
+                <a href="#" class="helper-link">
                   Забыли пароль?
                 </a>
                 <a href="#" class="helper-link">
@@ -146,7 +149,7 @@
                   </td>
                   <td class="basket__product-weight">
                     1,5 кг х
-                    <span class="cart__product-price">
+                    <span class="basket__product-price">
                       300 руб.
                     </span>
                   </td>
@@ -164,13 +167,11 @@
             </div>
           </div>
         </div>
-        <div class="header__index-content">
-          <p>
-            С 10 до 20, ежедневно<br>
-            <b>
-              8 812 450-25-25
-            </b>
-          </p>
+        <div class="page-header__index-content">
+          С 10 до 20, ежедневно<br>
+          <b>
+            8 812 450-25-25
+          </b>
         </div>
       </header>
       <main class="catalog-page">
