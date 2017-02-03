@@ -1,5 +1,13 @@
-html {
-  min-width: 900px;
+body  {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #849d8f;
+}
+
+body > input[type="radio"] {
+  display: none;
 }
 
 .page-wrapper {
@@ -11,21 +19,6 @@ html {
 
 .page-site {
   padding: 0 2.25%;
-}
-
-body  {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #323232;
-}
-
-.action,
-.products {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
 }
 
 img {
@@ -41,19 +34,38 @@ img {
   display: none;
 }
 
-/*---------------- nav-menu ----------------*/
-.page-header{
-  display: flex;
-  position: relative;
+/*---------------- nav-logo ----------------*/
+.nav-logo {
+  margin-right: 15px;
+  margin-left: -6px;
+  padding-top: 9px;
 }
 
+.nav-logo__link {
+  display: block;
+}
 
+.nav-logo {
+  width: 154px;
+  height: 64px;
+}
+
+.nav-logo__img {
+  vertical-align: bottom;
+}
+
+/*---------------- nav-menu ----------------*/
+.page-catalog-body
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
 
 .nav-menu {
   display: flex;
   flex-direction: row;
   min-width: 560px;
-  border: 1px solid;
 
 }
 
@@ -65,7 +77,7 @@ img {
   padding-top: 23px;
   font-size: 0;
   list-style-type: none;
-  border: 1px solid red;
+
 }
 
 .nav-menu__item {
@@ -395,8 +407,6 @@ img {
   min-width: 267px;
   padding-top: 22px;
   font-size: 0;
-  border: 1px solid yellow;
-
 }
 
 .user-block__icon::before {
@@ -423,27 +433,61 @@ img {
   line-height: 32px;
 }
 
+/*---------------- action ----------------*/
 .action {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   font-weight: 700;
   color: #ffffff;
 }
 
 .action__item {
-  width: 44%;
-  margin-right: 2%;
-  padding: 17px 19px;
+  box-sizing: border-box;
+  width: 560px;
+  padding: 17px 21px;
   padding-bottom: 23px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 15px;
 }
 
+.action__item {
+  height: 231px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.action__item:first-child {
+  margin-right:  26px;
+}
+
+.action__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.action__sentence {
+  margin: 0;
+  margin-bottom: 44px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 .action__item_left {
+  background-color: #73091B;
   background-image: url("../img/big-raspberry-backround.jpg");
 }
 
 .action__item_right {
+  background-color: #6D0004;
   background-image: url("../img/big-chocolate-background.jpg");
+}
+
+.action__btn {
+  text-align: right;
 }
 
 /*---------------- btn ----------------*/
@@ -657,6 +701,9 @@ img {
 
 /*---------------- products ----------------*/
 .products {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   margin-top: 40px;
   font-size: 0;
 }
