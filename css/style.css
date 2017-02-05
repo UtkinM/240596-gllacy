@@ -3,7 +3,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #849d8f;
+  color: #323232;
+  background: #849d8f;
 }
 
 body > input[type="radio"] {
@@ -24,10 +25,6 @@ body > input[type="radio"] {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.page-catalog-body .page-wrapper {
-  background-color: #849d8f;
 }
 
 .write-us {
@@ -112,8 +109,11 @@ img {
   content: "";
   position: absolute;
   right: 14px;
-  bottom: 7px;
+  bottom: 27px;
   left: 14px;
+  height: 1px;
+  background: #ffffff;
+  opacity: .2;
 }
 
 .nav-menu__item:hover .nav-menu__link {
@@ -161,8 +161,31 @@ img {
 }
 
 .sub-menu__link_bold {
+  position: relative;
   font-weight: 700;
 }
+
+.sub-menu__link_bold::after {
+  content: "";
+  position: absolute;
+  right: 9px;
+  bottom: 0;
+  left: 7px;
+  height: 1px;
+  background: #353535;
+  opacity: .2;
+}
+
+.sub-menu__link_active {
+  color: #ffffff;
+  background: #d07058;
+}
+
+.sub-menu__link_active:hover {
+  background: #d07058;
+  cursor: default;
+}
+
 
 /*------ search ------*/
 .search {
@@ -633,7 +656,7 @@ img {
   line-height: 60px;
 }
 
-.slider__nav {
+.slider__toggle {
   position: absolute;
   bottom: 21px;
   left: 0;
@@ -885,7 +908,6 @@ img {
 }
 
 .news__blog_content {
-  min-height: 220px;
   padding: 20px;
   background-color: #ffffff;
   background-image: url("../img/big-strawberry.jpg");
@@ -904,6 +926,10 @@ img {
   background-image: url("../img/mail-pattern.png");
 }
 
+.news__blog-link {
+  margin-top: 8px;
+  width: 290px;
+}
 
 .news__link {
   font-weight: 700;
@@ -913,6 +939,40 @@ img {
   background: rgba(255, 255,255, .8);
 }
 
+.news__link:hover {
+  color: #e84d37;
+}
+.news__form {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 210px;
+  padding: 30px 21px;
+  padding-bottom: 85px;
+}
+
+.news__desc {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.news__input-container {
+  position: absolute;
+  right: 21px;
+  bottom: 35px;
+  left: 21px;
+  padding-right: 145px;
+}
+
+.news__input {
+  margin-bottom: 0;
+}
+
+.subscription__btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px 17px;
+}
 
 /*---------------- page-footer ----------------*/
 
@@ -987,23 +1047,17 @@ img {
   background-position: -403px 0;
 }
 
-
-
-
-
-
 .services-info {
   width: 50%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  padding: 0;
-
 }
 
 .services-info__desk {
   width: 29%;
   padding-top: 18px;
+  list-style-type: none;
 }
 
 .services-info__desk:first-child {
@@ -1075,3 +1129,6 @@ img {
   line-height: 18px;
   color: #ffffff;
 }
+
+/*---------------- bread-crumbs ----------------*/
+
