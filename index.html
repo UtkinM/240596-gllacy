@@ -335,7 +335,7 @@
               (с 10 до 20 ежедневно)
             </b>
           </p>
-          <a href="#" class="btn  feedback__open">Форма обратной связи
+          <a href="#" class="btn  write-us__open">Форма обратной связи
           </a>
         </div>
       </div>
@@ -419,30 +419,33 @@
 </div>
 <!-- **************** Popup **************** -->
 <div class="write-us">
-  <button type="button" class="write-us__close" title="Закрыть">
-    Закрыть
-  </button>
-  <form action="#" class="form write-us__form" id="write-us-form" method="POST">
+  <form action="#" class="form  write-us__form" id="write-us-form" method="POST">
     <div class="write-us__title">Мы обязательно вам ответим!</div>
-    <div class="form__input">
+    <div class="form__input-holder">
       <input type="text" class="form__input  write-us__input" id="write-us-name" name="name"
              placeholder="Как вас зовут?">
       <label for="write-us-name" class="form__input-label">Как вас зовут?</label>
     </div>
-    <div class="form__input">
+    <div class="form__input-holder">
       <input type="email" class="form__input  write-us__input" id="write-us-email" name="e-mail"
              placeholder="Ваша почта для ответа?">
       <label for="write-us-email" class="form__input-label">Ваша почта для ответа?</label>
     </div>
-    <div class="form__input">
+    <div class="form__input-holder">
       <textarea name="review" class="form__textarea  write-us__textarea" id="write-us-review"
                 placeholder="Напишите что-нибудь..." rows="6"></textarea>
-      <label for="write-us-review" class="form__input-label">Напишите что-нибудь...</label>
+      <label for="write-us-review" class="form__input-label">
+        Напишите что-нибудь...
+      </label>
     </div>
-    <div class="write-us__btn">
-      <button type="submit" class="btn  write-us__submit">Отправить</button>
+    <div class="write-us__btn-holder">
+      <button type="submit" class="btn  write-us__submit" form="write-us-form">
+        Отправить
+      </button>
     </div>
-    <a href="#" class="write-us__close">Закрыть</a>
+    <a class="write-us__close" title="Закрыть">
+      Закрыть
+    </a>
   </form>
 </div>
 </body>
