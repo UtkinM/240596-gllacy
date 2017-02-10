@@ -96,16 +96,18 @@
                   Пароль
                 </label>
               </div>
-              <button type="submit" class="btn  login__submit" form="login-form">
-                Войти
-              </button>
-              <div class="helper">
-                <a href="#" class="helper-link  page-link_black">
-                  Забыли пароль?
-                </a>
-                <a href="#" class="helper-link  page-link_black">
-                  Новая регистрация
-                </a>
+              <div class="login__helper">
+                <button type="submit" class="btn  login__submit" form="login-form">
+                  Войти
+                </button>
+                <div class="helper">
+                  <a href="#" class="helper__link  page-link_black">
+                    Забыли пароль?
+                  </a>
+                  <a href="#" class="helper__link  page-link_black">
+                    Новая регистрация
+                  </a>
+                </div>
               </div>
             </form>
           </div>
@@ -116,7 +118,7 @@
           </div>
         </div>
         <div class="page-header__index-content">
-          С 10 до 20, ежедневно<br>
+          С 10 до 20, ежедневно <br>
           <b>
             8 812 450-25-25
           </b>
@@ -190,19 +192,18 @@
           <div class="products">
             <article class="product  product-bestseller">
               <div class="product__img">
-                <img src="img/product__picture-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"
-                     class="product__img" width="267" height="267">
-              <span class="product__price">
-                310&#8381;
-                <span class="product__weight">
-                  /кг
-                </span>
+                <img src="img/product__picture-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+                <span class="product__price">
+              310&#8381;
+              <span class="product__weight">
+                /кг
               </span>
+            </span>
               </div>
               <a href="#" class="product__link">
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </a>
-              <a href="#" class="btn product__btn">
+              <a href="#" class="btn  product__btn">
                 Быстрый просмотр
               </a>
             </article>
@@ -212,7 +213,7 @@
                      height="267">
                 <span class="product__price">
                 380&#8381;
-                <span class="wight">
+                <span class="product__weight">
                   /кг
                 </span>
               </span>
@@ -229,8 +230,8 @@
                 <img src="img/product__picture-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада"
                      width="267" height="267">
                 <span class="product__price">
-                380&#8381;
-                <span class="wight">
+                355&#8381;
+                <span class="product__weight">
                   /кг
                 </span>
               </span>
@@ -247,8 +248,8 @@
                 <img src="img/product__picture-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267"
                      height="267">
                 <span class="product__price">
-                380&#8381;
-                <span class="wight">
+                415&#8381;
+                <span class="product__weight">
                   /кг
                 </span>
               </span>
@@ -263,24 +264,20 @@
           </div>
           <div class="technology">
             <h2 class="technology__title">
-              Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
+              Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
             </h2>
             <div class="technology-item">
               <p class="technology__type  technology__type_ice">
-                Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
-                и проверенных временем технологий.
+                Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
               </p>
               <p class="technology__type  technology__type_cow">
-                Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
-                связывает долговременное сотрудничество.
+                Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
               </p>
               <p class="technology__type  technology__type_sheet">
-                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
-                дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
               </p>
               <p class="technology__type  technology__type_term">
-                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
-                мороженому растаять в пути и позволяет сохранить превосходный вкус.
+                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
               </p>
             </div>
           </div>
@@ -317,36 +314,35 @@
       </main>
     </div>
     <!-- **************** END Content **************** -->
-
-    <!-- map -->
-    <div class="map">
-      <div class="page-wrapper  map__page-wrapper">
-        <div class="map__contacts">
-          <p>
-            Адрес главного офиса<br>и офлайн магазина:<br>
-            <b class="map__bold">
-              ул. Большая Конюшенная 19/8, Санкт-Петербург
-            </b>
-          </p>
-          <p>
-            Для заказов по телефону:<br>
-            <b>
-              8 812 450-25-25<br>
-              (с 10 до 20 ежедневно)
-            </b>
-          </p>
-          <a href="#" class="btn  write-us__open">Форма обратной связи
-          </a>
-        </div>
-      </div>
-      <div class="map__google">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123961!2d30.320894616063466!3d59.938796869047955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1486553575157" allowfullscreen>
-        </iframe>
+  </div>
+  <!---------------- map ---------------->
+  <div class="map">
+    <div class="page-wrapper  map__page-wrapper">
+      <div class="map__contacts">
+        <p>
+          Адрес главного офиса<br>и офлайн магазина:<br>
+          <b class="map__bold">
+            ул. Большая Конюшенная 19/8, Санкт-Петербург
+          </b>
+        </p>
+        <p>
+          Для заказов по телефону:<br>
+          <b>
+            8 812 450-25-25
+            (с 10 до 20 ежедневно)
+          </b>
+        </p>
+        <a class="btn  write-us__open">
+          Форма обратной связи
+        </a>
       </div>
     </div>
+    <div class="map__google">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123961!2d30.320894616063466!3d59.938796869047955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1486553575157" allowfullscreen>
+      </iframe>
+    </div>
   </div>
-  <!--END map -->
-  <!-- **************** Footer **************** -->
+<!-- **************** Footer **************** -->
   <div class="page-wrapper">
     <div class="page-site">
       <footer class="page-footer">
@@ -413,7 +409,6 @@
         </span>
         </div>
       </footer>
-      <!-- **************** END Footer **************** -->
     </div>
   </div>
 </div>
@@ -448,5 +443,7 @@
     </a>
   </form>
 </div>
+<script src="js/script.js">
+</script>
 </body>
 </html>
