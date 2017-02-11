@@ -1,7 +1,6 @@
 var link = document.querySelector(".write-us__open"),
- writeUs = document.querySelector(".write-us"),
- writeusClose = document.querySelector(".write-us__close");
-
+  writeUs = document.querySelector(".write-us"),
+  writeusClose = document.querySelector(".write-us__close");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
