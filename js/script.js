@@ -11,5 +11,3 @@ writeusClose.addEventListener("click", function(event)
   {event.preventDefault();
   writeUs.classList.remove("write-us__show");
 });
-
-
