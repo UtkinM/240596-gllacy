@@ -1808,6 +1808,7 @@ img {
   margin-right: -239px;
   padding: 16px 24px;
   padding-bottom: 25px;
+  transform: translateY(-50%);
 }
 
 
