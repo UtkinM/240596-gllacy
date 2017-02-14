@@ -52,6 +52,12 @@ img {
 }
 
 /*---------------- nav-menu ----------------*/
+.page-catalog-body {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(255, 255, 255, 0));
+  background-repeat: no-repeat;
+  background-size: 100% 656px;
+}
+
 .page-catalog-body .page-header,
 .page-header {
   display: -webkit-box;
@@ -225,7 +231,7 @@ img {
   left: 50%;
   margin-top: -9px;
   margin-left: -9px;
-  background-position: -168px 0;
+  background-position: -173px -5px;
   width: 17px;
   height: 17px;
 }
@@ -282,7 +288,7 @@ img {
 }
 
 .basket__btn::before {
-  background-position: -195px 0;
+  background-position: -200px -5px;
   width: 21px;
   height: 20px;
   top: 6px;
@@ -369,7 +375,7 @@ img {
 }
 
 .basket_empty .basket__btn::before {
-  background-position: -226px 0;
+  background-position: -231px -5px;
 }
 
 /*---------------- login ----------------*/
@@ -388,7 +394,7 @@ img {
 }
 
 .login:hover .login__btn::before {
-  background-position: -288px 0;
+  background-position: -293px -5px;
   width: 21px;
   height: 19px;
 }
@@ -415,21 +421,21 @@ img {
   left: 16px;
   width: 21px;
   height: 19px;
-  background-position: -257px 0;;
+  background-position: -262px -5px;
 }
 
 .login__form {
   position: absolute;
   right: -2px;
   display: none;
-  width: 277px;
+  width: 237px;
   padding: 20px 20px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
 }
 
 .login__submit {
   padding: 10px 24px;
-  margin-right: 60px;
+  margin-right: 18px;
 }
 
 .login:hover .login__form {
@@ -475,6 +481,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   width: 277px;
+  text-align: right;
 }
 
 .helper__link {
@@ -486,6 +493,21 @@ img {
 
 .helper {
   width: 140px;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.login-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+
+  font-size: 13px;
+  line-height: 18px;
+  vertical-align: top;
 }
 
 /*---------------- page-header__index-content ---------------*/
@@ -520,6 +542,9 @@ img {
   justify-content: space-between;
   font-weight: 700;
   color: #ffffff;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .action__item {
@@ -631,7 +656,7 @@ img {
   margin-bottom: 20px;
   padding: 9px 13px;
   font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
   line-height: normal;
   color: #323232;
@@ -678,6 +703,10 @@ img {
   color: #5b9ddf;
   visibility: visible;
   opacity: 1;
+}
+
+.form__input_search {
+  margin-bottom: 0;
 }
 
 /*---------------- slider ----------------*/
@@ -856,7 +885,7 @@ img {
   content: "";
   position: absolute;
   background: #ffffff url("../img/sprite.png") no-repeat;
-  background-position: -721px 0;
+  background-position: -726px -5px;
   width: 61px;
   height: 61px;
   border-radius: 50%;
@@ -963,19 +992,19 @@ img {
 }
 
 .technology__type_ice::before {
-  background-position: -662px 0;
+  background-position: -667px -5px;
 }
 
 .technology__type_sheet::before {
-  background-position: -603px 0;
+  background-position: -608px -5px;
 }
 
 .technology__type_cow::before {
-  background-position: -487px 0;
+  background-position: -492px -5px;
 }
 
 .technology__type_term::before {
-  background-position: -545px 0;
+  background-position: -550px -5px;
 }
 
 /*---------------- news ----------------*/
@@ -1140,19 +1169,19 @@ img {
 }
 
 .social-link__twitter::before {
-  background-position: -361px 0;
+  background-position: -881px -5px;
 }
 
 .social-link__instagram::before {
-  background-position: -445px 0;
+  background-position: -839px -5px;
 }
 
 .social-link__facebook::before {
-  background-position: -319px 0;
+  background-position: -797px -5px;
 }
 
 .social-link__vk::before {
-  background-position: -403px 0;
+  background-position: -923px -5px;
 }
 
 .services-info {
@@ -1205,7 +1234,7 @@ img {
   height: 13px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -117px 0;
+  background-position: -122px -5px;
 }
 
 .page-link_white {
@@ -1546,7 +1575,7 @@ img {
 
 .selection-form__checkbox:checked + .selection-form__label::before {
   background: url("../img/sprite.png") no-repeat center;
-  background-position: -141px 0;
+  background-position: -146px -5px;
 }
 
 .selection-form__checkbox:disabled + .selection-form__label::before {
@@ -1750,11 +1779,11 @@ img {
 }
 
 .paginator__prev::before {
-  background-position: 0 0;
+  background-position: -5px -5px;
 }
 
 .paginator__next::before {
-  background-position: -76px 0;
+  background-position: -81px -5px;
 }
 
 .paginator__link_disabled {
