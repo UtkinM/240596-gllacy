@@ -5,7 +5,7 @@
   <title>HTML Academy: Gllacy Shop</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-catalog-body">
   <div class="page-wrapper">
@@ -220,9 +220,9 @@
           <fieldset class="selection-form__fieldset">
             <legend class="selection-form__legend">
               Цена:
-              <input type="text" class="selection-form__min-price" name="min-price" value="100" disabled>
+              <input type="text" class="selection-form__min-price" name="min-price" value="100">
               руб. –
-              <input type="text" class="selection-form__max-price" name="max-price" value="500" disabled>
+              <input type="text" class="selection-form__max-price" name="max-price" value="500">
               руб.
             </legend>
             <div class="selection-form__price">
@@ -240,7 +240,7 @@
             </legend>
             <ul class="selection-form__list  selection-form__list_fat">
               <li class="selection-form__list-item">
-                <input type="radio" class="selection-form__radio" id="fat-1" name="fat-value" value="0">
+                <input type="radio" class="selection-form__radio" id="fat-1" name="fat-value" value="0" disabled>
                 <label for="fat-1" class="selection-form__label">
                   0%
                 </label>
@@ -252,13 +252,13 @@
                 </label>
               </li>
               <li class="selection-form__list-item">
-                <input name="fat-value" class="selection-form__radio" id="fat-3" type="radio" value="10-30">
+                <input name="fat-value" class="selection-form__radio" id="fat-3" type="radio" value="10-30" disabled>
                 <label for="fat-3" class="selection-form__label">
                   до 30%
                 </label>
               </li>
               <li class="selection-form__list-item">
-                <input type="radio" class="selection-form__radio" id="fat-4" name="fat-value" value="30+">
+                <input type="radio" class="selection-form__radio" id="fat-4" name="fat-value" value="30+" disabled>
                 <label for="fat-4" class="selection-form__label">
                   выше 30%
                 </label>
@@ -283,19 +283,19 @@
                 </label>
               </li>
               <li class="selection-form__list-item">
-                <input type="checkbox" class="selection-form__checkbox" id="fillers-3" name="fruits">
+                <input type="checkbox" class="selection-form__checkbox" id="fillers-3" name="fruits" disabled>
                 <label for="fillers-3" class="selection-form__label">
                   фрукты
                 </label>
               </li>
               <li class="selection-form__list-item">
-                <input type="checkbox" class="selection-form__checkbox" id="fillers-4" name="syrups">
+                <input type="checkbox" class="selection-form__checkbox" id="fillers-4" name="syrups" disabled>
                 <label for="fillers-4" class="selection-form__label">
                   сиропы
                 </label>
               </li>
               <li class="selection-form__list-item">
-                <input type="checkbox" class="selection-form__checkbox" id="fillers-5" name="jams">
+                <input type="checkbox" class="selection-form__checkbox" id="fillers-5" name="jams" disabled>
                 <label for="fillers-5" class="selection-form__label">
                   джемы
                 </label>
