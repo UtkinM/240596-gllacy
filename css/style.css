@@ -11,6 +11,7 @@ body > input[type="radio"] {
   display: none;
 }
 
+
 .page-wrapper {
   box-sizing: border-box;
   min-width: 900px;
